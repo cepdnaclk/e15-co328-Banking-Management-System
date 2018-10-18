@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="505.0" prefWidth="755.0" style="-fx-background-color: rgb(255,255,255);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.DashboardController">
+   <children>
+      <Button fx:id="newClientBtn" layoutX="358.0" layoutY="15.0" mnemonicParsing="false" onAction="#newClientBtnEvent" prefHeight="40.0" prefWidth="40.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="Segoe UI Semilight" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="27.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/ic_action_person.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane fx:id="contentPane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0" />
+      <Label layoutX="14.0" layoutY="14.0" text="Dashboard" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Segoe UI Semilight" size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="backUpBtn" layoutX="595.0" layoutY="15.0" mnemonicParsing="false" onAction="#backUpBtnEvent" prefHeight="40.0" prefWidth="60.0" text="BackUp" />
+   </children>
+</AnchorPane>

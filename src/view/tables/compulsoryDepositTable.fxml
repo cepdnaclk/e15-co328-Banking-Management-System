@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="305.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.tables.CompulsoryDepositTableController">
+   <children>
+      <Label alignment="CENTER" prefHeight="30.0" prefWidth="230.0" style="-fx-background-color: rgb(80,80,80);" text="Compulsory Deposit" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="compulsoryTable" prefHeight="226.0" prefWidth="477.0" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <columns>
+            <TableColumn fx:id="dateColumn" prefWidth="66.0" text="Date" />
+            <TableColumn fx:id="timeColumn" prefWidth="124.0" sortable="false" text="Time" />
+            <TableColumn fx:id="detailColumn" prefWidth="75.0" text="Detail" />
+            <TableColumn fx:id="amountColumn" prefWidth="75.0" text="Amount" />
+            <TableColumn fx:id="balanceColumn" prefWidth="78.0" text="Balance" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <HBox alignment="CENTER_RIGHT" layoutY="256.0" prefHeight="27.0" prefWidth="477.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TextField fx:id="amountText" alignment="CENTER" prefHeight="27.0" prefWidth="150.0" promptText="Amount">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font></TextField>
+            <Button fx:id="proceedBtn" defaultButton="true" layoutX="228.0" layoutY="457.0" mnemonicParsing="false" onAction="#proceedBtnEvent" prefHeight="37.0" prefWidth="88.0" styleClass="btn" text="Proceed" />
+            <Button fx:id="deleteBtn" defaultButton="true" disable="true" layoutX="326.0" layoutY="457.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="88.0" styleClass="btn" text="Delete" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

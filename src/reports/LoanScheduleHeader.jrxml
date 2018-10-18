@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DepositSchedule" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4de1a254-ebdf-48ac-9b13-68bcb40bd396">
+	<property name="ireport.zoom" value="1.0263162364614211"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="dateText" class="java.lang.String"/>
+	<parameter name="timeText" class="java.lang.String"/>
+	<parameter name="records" class="java.lang.String"/>
+	<parameter name="clientType" class="java.lang.String"/>
+	<parameter name="heading" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select accId as MemberId, name as Name, norBalance as Balance
+from member m, account a
+where m.memId=a.memId;]]>
+	</queryString>
+	<field name="record" class="java.lang.String"/>
+	<title>
+		<band height="175" splitType="Stretch">
+			<image>
+				<reportElement x="16" y="6" width="70" height="99" uuid="891aa749-8bb2-428e-9257-146914901a6c"/>
+				<imageExpression><![CDATA["E:\\JAVA\\Sir - Prasad\\SanasaProject\\Main\\src\\reports\\logo.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="96" y="8" width="1" height="95" uuid="e465d481-c014-4e59-b180-6982b056a60c"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="106" y="7" width="419" height="39" uuid="48ccfad2-2c97-4fc9-9fac-09b07c26ab27"/>
+				<textElement>
+					<font fontName="Segoe UI Symbol" size="28" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Weedagama Sanasa Society Ltd.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="107" y="66" width="247" height="18" uuid="8665172a-a302-4936-a1fd-33c982070aac"/>
+				<textElement>
+					<font fontName="Segoe UI Semibold" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Address : Weva Rd, Weedagama, Bandaragama.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="107" y="48" width="85" height="18" uuid="37650606-9993-44eb-97bd-feed2cec7a5c"/>
+				<textElement>
+					<font fontName="Segoe UI Semibold" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Reg No : ka/875]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="107" y="84" width="247" height="18" uuid="f9280d1b-85d1-442e-8986-b2511fed6e74"/>
+				<textElement>
+					<font fontName="Segoe UI Semibold" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Contact : 038-5684168   Fax : 038-2227884]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="a2506ed4-d4ad-4284-8262-e6bf0b04e671"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="110" width="555" height="1" uuid="18cac190-de41-46b1-9b18-97a61f0f4a3c"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="0" y="111" width="555" height="43" uuid="a0b666f7-71d7-4090-bdbd-324da8262dfb"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Segoe UI Semibold" size="22" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="16" y="155" width="142" height="20" uuid="1964dae0-2350-45ce-965a-065afd0c7801"/>
+				<textElement textAlignment="Left">
+					<font fontName="Segoe UI Semibold" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dateText}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="174" width="555" height="1" uuid="32ee7d18-38cb-4192-85b9-e7a0382e4f6d"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="158" y="155" width="241" height="20" uuid="faf09e57-20aa-4ff5-b1e5-8f5439e3ff79"/>
+				<textElement textAlignment="Center">
+					<font fontName="Segoe UI Semibold" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{clientType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="399" y="155" width="144" height="20" uuid="ae29e8cb-113f-4196-a970-fca657f84f39"/>
+				<textElement textAlignment="Right">
+					<font fontName="Segoe UI Semibold" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{timeText}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="41" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="31" y="18" width="494" height="20" backcolor="#99CCFF" uuid="9c16165d-126a-43c8-af6f-9381a9bb5810"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="31" y="40" width="494" height="1" uuid="b48e1fcf-0dec-4016-9e5b-efec3a0cbff2"/>
+			</line>
+			<textField>
+				<reportElement x="31" y="21" width="494" height="20" uuid="e3318be1-5c38-483c-9f66-bd154a97880b"/>
+				<textElement textAlignment="Left">
+					<font size="11" isBold="false"/>
+					<paragraph leftIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{heading}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="28" splitType="Stretch">
+			<line>
+				<reportElement x="31" y="26" width="494" height="1" uuid="445ea7cb-c87d-4e3a-8d7e-b977552c27bc"/>
+			</line>
+			<textField>
+				<reportElement x="31" y="8" width="494" height="20" uuid="15941598-b7e6-43dd-a964-cfb17c78816d"/>
+				<textElement textAlignment="Left">
+					<font size="11"/>
+					<paragraph leftIndent="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{record}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="104">
+			<staticText>
+				<reportElement x="31" y="83" width="144" height="20" uuid="df25976b-fd85-42bd-8392-1d1b94fef774"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI Semibold" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Risith Software Solutions]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="192" y="83" width="144" height="20" uuid="ad21ff7b-6a14-498f-9c11-17b33317a285"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI Semibold" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Contact : 0718848825]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="83" width="169" height="20" uuid="11ce6f82-d2ae-4bcd-8183-d64a04271789"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI Semibold" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Email : risithmarshall@gmail.com]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="75" width="555" height="1" uuid="660a8f70-ec61-42cc-b21d-b16293032cf3"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="379" y="40" width="132" height="20" uuid="46a6d5cc-4e83-4e6e-b45d-c4217a82c104"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Segoe UI Semibold" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{records}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="31" y="40" width="161" height="20" uuid="8a4f7c5b-2a1e-47fc-96dc-c634fc25bac4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Segoe UI Semibold" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Reported By Mrs. Chandrika]]></text>
+			</staticText>
+			<line>
+				<reportElement x="34" y="37" width="158" height="1" uuid="61e14adb-25bf-413f-bd09-9a8af7a261e4"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+		</band>
+	</lastPageFooter>
+</jasperReport>

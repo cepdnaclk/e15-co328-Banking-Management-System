@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="305.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.tables.SharesTableController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="477.0" spacing="10.0" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <TextField alignment="CENTER" prefHeight="37.0" prefWidth="150.0" promptText="Amount">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Button fx:id="proceedBtn1" defaultButton="true" layoutX="228.0" layoutY="457.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="76.0" styleClass="btn" text="Proceed">
+               <font>
+                  <Font name="Segoe UI Semibold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelBtn" defaultButton="true" layoutX="326.0" layoutY="457.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="79.0" styleClass="btn" text="Clear">
+               <font>
+                  <Font name="Segoe UI Semibold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <TableView fx:id="shareTable" prefHeight="255.0" prefWidth="477.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="dateColumn" minWidth="36.0" prefWidth="123.0" text="Date" />
+            <TableColumn fx:id="timeColumn" minWidth="53.0" prefWidth="123.0" text="Time" />
+            <TableColumn fx:id="amountColumn" minWidth="58.0" prefWidth="131.0" text="Amount" />
+            <TableColumn fx:id="balanceColumn" minWidth="13.0" prefWidth="14.0" text="Balance" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
