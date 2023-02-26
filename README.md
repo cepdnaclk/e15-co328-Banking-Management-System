@@ -57,7 +57,7 @@ The Bank System project allows users to perform the following operations:
   * Net Beans (Early Stage in the project)
   * IntelliJ IDEA
   * Data Grip
-  * SceneBuilder
+  * JavaFX SceneBuilder
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -78,9 +78,9 @@ This is an example of how you may give instructions on setting up this project l
 
 ### Prerequisites
 First you need to install Java, MySQL Server and IntelliJ IDEA in your computer.
-  * Java - https://developer.nvidia.com/cuda-toolkit-archive
-  * MySQL - https://developer.nvidia.com/cuda-toolkit-archive
-  * IntelliJ - https://developer.nvidia.com/cuda-toolkit-archive
+  * Java - https://www.oracle.com/java/technologies/downloads/
+  * MySQL - https://www.mysql.com/downloads/
+  * IntelliJ - https://www.jetbrains.com/idea/
 
 ### Installation
 1. Install Java and MySQL Server
