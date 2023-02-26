@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.*?>
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgb(255,255,255);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.sub.ViewAllMembersGraphicController">
+   <children>
+      <ScrollPane fitToWidth="true" prefViewportHeight="150.0" prefViewportWidth="600.0" style="-fx-background-insets: 0; -fx-padding: 0; -fx-background: rgb(255,255,255);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <FlowPane fx:id="flowPane" hgap="10.0" prefHeight="150.0" prefWidth="589.0" rowValignment="TOP" snapToPixel="false" vgap="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

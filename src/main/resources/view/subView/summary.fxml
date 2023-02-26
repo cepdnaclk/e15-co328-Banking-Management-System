@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.sub.SummaryController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="90.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="1.0" layoutY="10.0" prefHeight="411.0" prefWidth="277.0" style="-fx-border-color: white #cccccc white white; -fx-background-color: rgb(255,255,255);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox layoutX="14.0" layoutY="72.0" spacing="20.0">
+                     <children>
+                        <Text layoutX="14.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search a Client">
+                           <font>
+                              <Font name="Segoe UI Semilight" size="24.0" />
+                           </font>
+                        </Text>
+                        <VBox layoutX="14.0" layoutY="100.0" spacing="3.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="56.0" text="Search" textFill="#9a3434" />
+                              <HBox alignment="CENTER" layoutX="14.0" layoutY="82.0" spacing="3.0">
+                                 <children>
+                                    <ComboBox fx:id="searchClientCombo" editable="true" maxWidth="1.7976931348623157E308" prefHeight="27.0" prefWidth="193.0" promptText="Search A Client" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="14.0" layoutY="157.0" spacing="10.0">
+                           <children>
+                              <VBox layoutX="14.0" layoutY="113.0" spacing="3.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="115.0" text="Name" />
+                                    <TextField fx:id="nameText" editable="false" layoutX="14.0" layoutY="132.0" prefHeight="27.0" prefWidth="245.0" promptText="Client Name" />
+                                 </children>
+                              </VBox>
+                              <VBox spacing="3.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="115.0" text="Type" />
+                                    <TextField fx:id="typeText" editable="false" layoutX="14.0" layoutY="132.0" prefHeight="27.0" prefWidth="245.0" promptText="Client Type" />
+                                 </children>
+                              </VBox>
+                              <VBox spacing="3.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="115.0" text="Status" />
+                                    <TextField fx:id="statusText" editable="false" layoutX="14.0" layoutY="132.0" prefHeight="27.0" prefWidth="245.0" promptText="Client Status" />
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="14.0" layoutY="227.0" spacing="3.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="115.0" text="Contact" />
+                                    <TextField fx:id="contactText" editable="false" layoutX="14.0" layoutY="132.0" prefHeight="27.0" prefWidth="245.0" promptText="Client Telephone Number" />
+                                 </children>
+                              </VBox>
+                              <HBox prefHeight="14.0" prefWidth="245.0">
+                                 <children>
+                                    <Region prefHeight="27.0" prefWidth="171.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <Button fx:id="backToBtn" layoutX="217.0" layoutY="-1.0" mnemonicParsing="false" onAction="#backToBtnEvent" prefHeight="40.0" prefWidth="36.0" styleClass="blackCircle" stylesheets="@../../viewStyle/projectStyle.css" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="16.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../images/ic_action_previous_item.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="summaryPane" layoutX="279.0" prefHeight="425.0" prefWidth="476.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="279.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

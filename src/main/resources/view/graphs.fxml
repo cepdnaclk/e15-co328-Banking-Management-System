@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane id="AnchorPane" prefHeight="509.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.GraphsController">
+   <children>
+      <AnchorPane fx:id="parentPane" layoutX="35.0" layoutY="85.0" style="-fx-background-color: rgb(225,229,237);" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="80.0" />
+      <Text layoutX="10.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Graphs" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Segoe UI Semilight" size="48.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER_RIGHT" layoutX="286.0" layoutY="11.0" prefHeight="48.0" prefWidth="544.0" spacing="30.0" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <VBox fx:id="clientTypeBox" spacing="2.0">
+               <children>
+                  <Label layoutX="51.0" layoutY="13.0" text="Client Type">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="clientTypeCombo" layoutX="14.0" layoutY="40.0" minWidth="0.0" onAction="#clientTypeComboEvent" prefHeight="27.0" prefWidth="207.0" />
+               </children>
+            </VBox>
+            <VBox layoutX="201.0" layoutY="14.0" spacing="2.0">
+               <children>
+                  <Label layoutX="51.0" layoutY="13.0" text="Data Type">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="dataTypeCombo" layoutX="14.0" layoutY="40.0" minWidth="0.0" onAction="#dataTypeComboEvent" prefHeight="27.0" prefWidth="207.0" />
+               </children>
+            </VBox>
+            <VBox layoutX="437.0" layoutY="14.0" spacing="2.0">
+               <children>
+                  <Label layoutX="51.0" layoutY="13.0" text="Graph Type">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="graphTypeCombo" layoutX="14.0" layoutY="40.0" minWidth="0.0" onAction="#graphTypeComboEvent" prefHeight="27.0" prefWidth="207.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

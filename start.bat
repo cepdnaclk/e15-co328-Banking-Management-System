@@ -1,0 +1,1 @@
+start javaw -jar SANASA-1.0.0-SNAPSHOT.jar

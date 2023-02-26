@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane id="AnchorPane" prefHeight="305.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewController.tables.NormalDepositTableController">
+   <children>
+      <Label alignment="CENTER" prefHeight="30.0" prefWidth="230.0" style="-fx-background-color: rgb(80,80,80);" text="Normal Deposit" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="normalTable" fixedCellSize="0.0" prefHeight="226.0" prefWidth="477.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <columns>
+            <TableColumn fx:id="dateColumn" prefWidth="78.66666412353516" text="Date" />
+            <TableColumn fx:id="timeColumn" prefWidth="49.0" text="Time" />
+            <TableColumn fx:id="detailColumn" prefWidth="78.0" text="Detail" />
+            <TableColumn fx:id="depositColumn" prefWidth="75.0" text="Deposit" />
+            <TableColumn fx:id="withdrawColumn" prefWidth="75.0" text="WithDraw" />
+            <TableColumn fx:id="balanceColumn" prefWidth="49.0" text="Balance" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <HBox alignment="CENTER_RIGHT" layoutY="257.0" prefHeight="27.0" prefWidth="477.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ComboBox fx:id="actionCombo" onAction="#actionComboEvent" prefHeight="39.0" prefWidth="163.0" promptText="Action" visibleRowCount="2" />
+            <TextField fx:id="amountText" alignment="CENTER" prefHeight="37.0" prefWidth="150.0" promptText="Amount">
+               <font>
+                  <Font size="16.0" />
+               </font></TextField>
+            <Button fx:id="proceedBtn" defaultButton="true" layoutX="228.0" layoutY="457.0" mnemonicParsing="false" onAction="#proceedBtnEvent" prefHeight="43.0" prefWidth="76.0" styleClass="btn" text="Proceed">
+               <font>
+                  <Font name="Segoe UI Semibold" size="13.0" />
+               </font></Button>
+            <Button fx:id="clearBtn" defaultButton="true" layoutX="326.0" layoutY="457.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="79.0" styleClass="btn" text="Clear">
+               <font>
+                  <Font name="Segoe UI Semibold" size="13.0" />
+               </font></Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

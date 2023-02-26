@@ -1,3 +1,6 @@
 Manifest-Version: 1.0
-X-COMMENT: Main-Class will be added automatically by build
+X-COMMENT: application.BankApplication-Class will be added automatically by build
+Created-By: RISITH
+Built-By: RISITH
+Main-Class: application.BankApplication
 
