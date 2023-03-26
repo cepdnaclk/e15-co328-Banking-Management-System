@@ -31,5 +31,5 @@
 
     ],
     "description":"The Bank System project is a monolithic architecture designed for Sanasa Bank, a local bank in Sri Lanka. The system is built to manage members' accounts and transactions, including deposits and loans. The project was built using JavaFx for the front end and MySQL for the backend database.",
-    "tags":["Java","MySQL", "JavaFX", "CSS"],
+    "tags":["Java","MySQL", "JavaFX", "CSS"]
 }
