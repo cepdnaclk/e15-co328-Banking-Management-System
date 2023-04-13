@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="docs/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Sanasa Bank System Project</h3>
@@ -64,12 +64,12 @@ The Bank System project allows users to perform the following operations:
 ## Samples
 
 <p float="left">
-    <img src="images/dashboard.png" width="45%"/>
-    <img src="images/clients.png" width="45%" />
-    <img src="images/loans.png" width="45%" />
-    <img src="images/payment.png" width="45%" />
-    <img src="images/graphs.png" width="45%" />
-    <img src="images/reports.png" width="45%" />
+    <img src="docs/images/dashboard.png" width="45%"/>
+    <img src="docs/images/clients.png" width="45%" />
+    <img src="docs/images/loans.png" width="45%" />
+    <img src="docs/images/payment.png" width="45%" />
+    <img src="docs/images/graphs.png" width="45%" />
+    <img src="docs/images/reports.png" width="45%" />
 </p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
