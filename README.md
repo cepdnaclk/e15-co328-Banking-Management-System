@@ -22,20 +22,20 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#project-overview">Overview</a></li>
-    <li><a href="#technology-stack">Technology Stack</a></li>
-    <li><a href="#project-samples">Samples</a></li>
+    <li><a href="#project-overview">Introduction</a></li>
+    <li><a href="#implementation">Implementation</a></li>
+    <li><a href="#project-samples">System Overview</a></li>
     <li><a href="#project-experimenting">How to Run</a></li>
     <li><a href="#project-review">Review</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
-## Overview
+## Introduction
 The Bank System project is a monolithic architecture designed for Sanasa Bank, a local bank in Sri Lanka. The system is built to manage members' accounts and transactions, including deposits and loans. The project was built using JavaFx for the front end and MySQL for the backend database.
 
-### Functionality
-The Bank System project allows users to perform the following operations:
+- ### Functionality
+    The Bank System project allows users to perform the following operations:
 
    1. [x] Create and manage member accounts
    2. [x] Create and manage deposits and withdrawals
@@ -44,7 +44,7 @@ The Bank System project allows users to perform the following operations:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Technology Stack
+## Implementation
 
 - ### Programming Languages and techniques Used
   * Java
@@ -59,11 +59,31 @@ The Bank System project allows users to perform the following operations:
   * Data Grip
   * JavaFX SceneBuilder
 
+- ### Design Patterns
+  - #### Singleton Design Pattern
+    In our project, the back end that makes connections to MySQL database. To Avoid Dirty connections across the database and java program we have used singleton pattern to ensure we have only one database connection available at any point of time. We did it because, database connections are a limited resource. Some DBs have a very low connection limit, and wasting connections is a major problem. By consuming many connections, you may be blocking others for using the database.
+
+  - #### Factory Design Pattern
+    Our Project has around 17 Model classes and 14 database controller classes. Creating objects from this classes all over the places in GUI controllers, the overall project code will become messy. That’s why we implemented Factories called “ModelFactory” and “ControllerFactory” for both Model classes and database controller classes.
+
+- ### Design Diagrams
+1. Use Case Diagram
+   <img src="docs/images/user_case_diagram.jpg" width="80%"/>
+
+
+2. Conceptual Design
+   <img src="docs/images/conceptual_design.jpg" width="80%"/>
+
+
+3. Physical Model\
+   <img src="docs/images/physical_model.png" width="80%"/>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Samples
+## System Overview
 
 <p float="left">
+    <img src="docs/images/log_in.png" width="45%"/>
     <img src="docs/images/dashboard.png" width="45%"/>
     <img src="docs/images/clients.png" width="45%" />
     <img src="docs/images/loans.png" width="45%" />
