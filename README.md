@@ -22,11 +22,11 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#project-overview">Introduction</a></li>
+    <li><a href="#introduction">Introduction</a></li>
     <li><a href="#implementation">Implementation</a></li>
-    <li><a href="#project-samples">System Overview</a></li>
-    <li><a href="#project-experimenting">How to Run</a></li>
-    <li><a href="#project-review">Review</a></li>
+    <li><a href="#system-overview">System Overview</a></li>
+    <li><a href="#how-to-run">How to Run</a></li>
+    <li><a href="#review">Review</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -67,11 +67,11 @@ The Bank System project is a monolithic architecture designed for Sanasa Bank, a
     Our Project has around 17 Model classes and 14 database controller classes. Creating objects from this classes all over the places in GUI controllers, the overall project code will become messy. That’s why we implemented Factories called “ModelFactory” and “ControllerFactory” for both Model classes and database controller classes.
 
 - ### Design Diagrams
-1. Use Case Diagram
+1. Use Case Diagram\
    <img src="docs/images/user_case_diagram.jpg" width="80%"/>
 
 
-2. Conceptual Design
+2. Conceptual Design\
    <img src="docs/images/conceptual_design.jpg" width="80%"/>
 
 
@@ -106,14 +106,18 @@ First you need to install Java, MySQL Server and IntelliJ IDEA in your computer.
 1. Install Java and MySQL Server
 2. Clone the repository
     ```bash
-    git clone RisithPerera/sanasaBankSystem
+    git clone https://github.com/cepdnaclk/e15-co328-Banking-Management-System.git
     ```
 3. Open the project from IntelliJ IDEA
 4. Apply the database script from this location into the MySQL Server
     ```bash
-    sanasaBankSystem/src/main/resources/dbScript/dbScript.sql
+    e15-co328-Banking-Management-System/src/main/resources/dbScript/
     ```
-5. Run the application from the target folder using console
+5. Build the project using Maven
+    ```bash
+    mvn clean install
+    ```
+6. Run the application from the target folder using console
     ```bash
     start javaw -jar SANASA-1.0.0-SNAPSHOT.jar
     ```
